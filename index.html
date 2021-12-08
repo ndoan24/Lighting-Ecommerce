@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Classic Lightbulb | Ecommerce Website Design</title>
@@ -31,7 +32,7 @@
 
 
                 <nav>
-                    <ul>
+                    <ul id="MenuItems">
                         <li><a href="">Home</a></li>
                         <li><a href="">Products</a></li>
                         <li><a href="">About</a></li>
@@ -44,6 +45,7 @@
                 </nav>
 
                 <img src="images/carticon2.png" width="30px" height="30">
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
 
             </div>
             <!--column of head -->
@@ -273,26 +275,117 @@
                 <div class="small-container">
                     <div class="row">
                         <div class="col-5">
-                            <a href="https://www.amazon.com/sp?_encoding=UTF8&asin=B072LNNNHW&isAmazonFulfilled=0&ref_=olp_merch_name_1&seller=A15YVG09ZLVD1Q">
+                            <a
+                                href="https://www.amazon.com/sp?_encoding=UTF8&asin=B072LNNNHW&isAmazonFulfilled=0&ref_=olp_merch_name_1&seller=A15YVG09ZLVD1Q">
                                 <img src="images/Amazon.webp" alt="HTML tutorial" style="width:182px;height:142px;">
-                                </a>
+                            </a>
 
-                            
-                                <a href="https://www.ebay.com/usr/classic-light-bulb">
-                                    <img src="images/Ebay Logo.webp" alt="HTML tutorial" style="width:182px;height:142px;">
-                                    </a>
-                            
 
-            
+                            <a href="https://www.ebay.com/usr/classic-light-bulb">
+                                <img src="images/Ebay Logo.webp" alt="HTML tutorial" style="width:182px;height:142px;">
+                            </a>
 
-                       
-                        
+
+
+
+
+
+
+                        </div>
 
                     </div>
 
                 </div>
 
-            </div>
+                <!--footer-->
+
+                <div class="footer">
+
+<div class="container">
+
+<div class="row">
+
+<div class="footer-col-1">
+<h3>Download our App</h3>
+
+
+
+</div>
+
+<div class="footer-col-2">
+<img src="images/lightbulb">
+<p>Testing Lighting Supplies, Ceiling Fans, Electrical Supplies, and Home Decor all at Great Prices</p>
+
+
+
+</div>
+
+
+<div class="footer-col-3">
+    <h3>Useful Links</h3>
+
+    <ul>
+        <li>Coupons</li>
+        <li>Blog Post</li>
+        <li>Return Policy</li>
+    </ul>
+
+
+    
+    
+    
+    </div><div class="footer-col-4">
+<h3>Follow Us </h3>
+<ul>
+    <li>Facebook</li>
+    <li>Instagram</li>
+   
+</ul>
+
+<hr>
+<p class="copyright">Copyright 2021- Easy Tutoorials</p>
+
+</div>
+
+<div class="footer-col-1">
+    <h3>Download our App</h3>
+    
+    
+    
+    </div>
+
+
+
+
+
+
+</div>
+</div>
+
+</div>
+
+
+
+                </div>
+
+
+                <!--js for toggle menu-->
+
+                <script>
+
+                    var MenuItems = document.getElementById("MenuItems");
+
+                    MenuItems.style.maxHeight= "0px";
+
+                    function menutoggle(){
+                        if (MenuItems.style.maxHeight == "0px")
+                        { MenuItems.style.maxHeight = "200px";
+                    }
+                    else 
+                    { MenuItems.style.maxHeight = "0px";
+                }
+                    }
+                </script>
 
 </body>
 
